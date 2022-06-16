@@ -29,6 +29,7 @@ function App() {
 
   useEffect(() => {
     !movies ? searchMovies("") : getMovies(API_URL);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const findGenre = (id) => {
