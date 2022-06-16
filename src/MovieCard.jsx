@@ -6,7 +6,7 @@ const MovieCard = ({ movie, findGenre }) => {
   return (
     <div className="movie">
       <div>
-        <p>{movie.release_date.slice(0, 4)}</p>
+        <p>{movie?.release_date ? movie.release_date.slice(0, 4) : "N/A"}</p>
       </div>
 
       <div>
